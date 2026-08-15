@@ -1,7 +1,7 @@
 ---
 doc_type: README
 doc_id: README
-title: AI Sports Coach Motion Control
+title: AI Sports Coach
 status: active
 purpose: Explain how to turn human motion references into a consistent AI digital-human sports course.
 owns:
@@ -15,7 +15,7 @@ read_when:
 last_reviewed: 2026-08-15
 ---
 
-# AI Sports Coach Motion Control
+# AI Sports Coach
 
 Build a reusable sports-motion library with one consistent AI digital-human coach, then turn approved clips into a timed course with voice guidance.
 
@@ -64,8 +64,10 @@ Click any frame to open the repository-hosted MP4.
 
 | 10:35 course orchestration | Timed voice coaching |
 | --- | --- |
-| [![Da-Yul course orchestration](examples/images/dayul-course-orchestration.png)](examples/media/dayul-course-orchestration.mp4) | [![Da-Yul timed voice coaching](examples/images/dayul-timed-voice-coaching.png)](examples/media/dayul-timed-voice-coaching.mp4) |
+| [![Da-Yul course orchestration](examples/images/dayul-course-orchestration.gif)](examples/media/dayul-course-orchestration.mp4) | [![Da-Yul timed voice coaching](examples/images/dayul-timed-voice-coaching.png)](examples/media/dayul-timed-voice-coaching.mp4) |
 | 20 actions across warm-up, main training, and cooldown | Technique, correction, countdown, encouragement, and transitions on the course timeline |
+
+The course GIF plays the complete 31.7-second orchestration recording, from course overview through warm-up, main training, cooldown, and completion. Click it for the original MP4.
 
 ### Human reference vs. Da-Yul output
 
@@ -80,8 +82,8 @@ Published context: [Da-Yul demo 04 on X](https://x.com/ZhenZhu200/status/2087578
 Clone the repository:
 
 ```bash
-git clone https://github.com/zhenzoo/ai-sports-coach-motion-control.git
-cd ai-sports-coach-motion-control
+git clone https://github.com/zhenzoo/ai-sports-coach.git
+cd ai-sports-coach
 ```
 
 Copy `skills/ai-sports-coach` into your agent's skills directory, or point the agent directly at the skill in this repository. Initialize a project:
@@ -128,15 +130,15 @@ The Skill prepares one generation packet per action and enforces one important g
 
 ### 1. Build a Character Bible, not one attractive portrait
 
-Different assets anchor different failure modes. Turnaround and head views stabilize identity during direction changes; T-pose fixes body proportions; outfit details keep clothing, materials, and small design elements consistent.
+These are the four final Character Bible sheets used for Da-Yul. Turnaround views anchor the full body from multiple directions; head views protect facial identity during turns; outfit details lock materials and construction; action poses test whether the same body, face, and clothing survive full-body articulation. The pose sheet is an identity and consistency anchor—not a replacement for the motion-reference video.
 
-| Turnaround views | T-pose and proportions |
+| Turnaround views | Head views |
 | --- | --- |
-| ![Da-Yul turnaround views](examples/images/dayul-character-turnaround.jpg) | ![Da-Yul T-pose views](examples/images/dayul-character-tpose.jpg) |
+| ![Da-Yul turnaround views](examples/images/dayul-character-turnaround.jpg) | ![Da-Yul head views](examples/images/dayul-character-head-views.jpg) |
 
-| Head views | Outfit details |
+| Outfit details | Action-pose sheet |
 | --- | --- |
-| ![Da-Yul head views](examples/images/dayul-character-head-views.jpg) | ![Da-Yul outfit details](examples/images/dayul-character-outfit.jpg) |
+| ![Da-Yul outfit details](examples/images/dayul-character-outfit.jpg) | ![Da-Yul action-pose sheet](examples/images/dayul-character-action-poses.jpg) |
 
 The reusable Character Bible prompt is in [SOP-010: Kling Motion Control](skills/ai-sports-coach/references/SOP-010-kling-motion-control.md#character-bible-prompt).
 
@@ -150,7 +152,9 @@ The Motion Control inputs have different jobs:
 4. Bind the authorized face subject when available.
 5. Keep the prompt short: action clarification, prop, studio, camera, and exclusions.
 
-![Da-Yul face subject selected in the Kling Motion Control workspace](examples/images/dayul-kling-face-binding.jpg)
+![Complete Kling 3.0 Motion Control web workflow: reference video, character image, orientation, face subject, and prompt](examples/images/dayul-kling-motion-control-workspace.png)
+
+This is the complete web-workspace record used in the project, not a cropped face-binding detail. It shows the reference video, matched character image, orientation choice, Da-Yul face subject, working prompt, and the four input decisions together.
 
 Reference video = motion. Character image and face subject = identity. Prompt = only what those inputs do not already specify.
 

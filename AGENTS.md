@@ -1,7 +1,7 @@
 ---
 doc_type: AGENTS
 doc_id: AGENTS
-title: AI Sports Coach Motion Control agent entry
+title: AI Sports Coach agent entry
 status: active
 purpose: Route agents to the repository skill and define public-safety boundaries.
 owns:

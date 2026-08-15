@@ -1,7 +1,7 @@
 ---
 doc_type: CLAUDE
 doc_id: CLAUDE
-title: Claude adapter for AI Sports Coach Motion Control
+title: Claude adapter for AI Sports Coach
 status: active
 purpose: Route Claude-compatible sessions to the shared repository instructions.
 owns:
