@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Sports Coach"
+  short_description: "Turn motion references into AI sports coaching courses"
+  default_prompt: "Use $ai-sports-coach to prepare a Kling Motion Control sports course from my assets."

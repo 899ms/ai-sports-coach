@@ -1,0 +1,29 @@
+{
+  "reviewed_at": "2026-08-15",
+  "media": [
+    {
+      "path": "examples/media/dayul-motion-output.mp4",
+      "subject": "Da-Yul generated motion output",
+      "rights_status": "owner-provided-generated-output",
+      "redistribution_status": "allowed"
+    },
+    {
+      "path": "examples/media/dayul-course-orchestration.mp4",
+      "subject": "Da-Yul course orchestration recording",
+      "rights_status": "owner-provided-product-recording",
+      "redistribution_status": "allowed"
+    },
+    {
+      "path": "examples/media/dayul-timed-voice-coaching.mp4",
+      "subject": "Da-Yul course with timed voice coaching",
+      "rights_status": "owner-provided-product-recording",
+      "redistribution_status": "allowed"
+    }
+  ],
+  "excluded": [
+    {
+      "subject": "Human reference motion clip used in the first experiment",
+      "reason": "Original post URL and redistribution permission were not preserved; link to the published X comparison instead of copying the source file."
+    }
+  ]
+}

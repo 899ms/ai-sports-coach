@@ -1,0 +1,12 @@
+.env
+.env.*
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Real projects belong outside this public package.
+projects/
+work/
+outputs/
+.tmp-validation-*/
