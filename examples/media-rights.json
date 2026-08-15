@@ -55,9 +55,9 @@
     {
       "paths": [
         "examples/images/dayul-character-turnaround.jpg",
-        "examples/images/dayul-character-tpose.jpg",
         "examples/images/dayul-character-head-views.jpg",
-        "examples/images/dayul-character-outfit.jpg"
+        "examples/images/dayul-character-outfit.jpg",
+        "examples/images/dayul-character-action-poses.jpg"
       ],
       "subject": "Da-Yul Character Bible illustrations",
       "rights_status": "owner-provided-generated-character-assets",
@@ -65,7 +65,7 @@
     },
     {
       "paths": [
-        "examples/images/dayul-kling-face-binding.jpg",
+        "examples/images/dayul-kling-motion-control-workspace.png",
         "examples/images/dayul-action-library.png",
         "examples/images/dayul-course-timeline.png",
         "examples/images/dayul-app-runtime.png",
@@ -81,6 +81,7 @@
         "examples/images/dayul-motion-output.png",
         "examples/images/dayul-lunge-warmup.png",
         "examples/images/dayul-course-orchestration.png",
+        "examples/images/dayul-course-orchestration.gif",
         "examples/images/dayul-timed-voice-coaching.png"
       ],
       "subject": "README preview frames derived from allowed repository media",
