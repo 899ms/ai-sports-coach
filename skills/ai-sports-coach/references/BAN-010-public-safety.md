@@ -18,7 +18,7 @@ last_reviewed: 2026-08-15
 
 Stop public release when any of these are true:
 
-- A human reference video has no preserved source URL, creator, capture date, or redistribution status.
+- An externally sourced human reference video has no preserved source URL, creator, capture date, or redistribution status.
 - A real person's face or voice lacks explicit permission for the intended use.
 - A clip contains a third-party logo, private setting, minor, client information, or sensitive personal data that has not been cleared.
 - The package contains API keys, Authorization headers, cookies, `.env` files, signed URLs, provider job payloads with secrets, or private job state.
@@ -26,6 +26,8 @@ Stop public release when any of these are true:
 
 Publicly viewable does not mean licensed for redistribution or commercial use. Record facts in `inputs/sources.json`; do not replace unknown facts with optimistic assumptions.
 
-For a public reusable repository, include owned or permission-cleared generated outputs and link to an already published comparison when the original reference cannot be redistributed. Keep user-supplied assets outside the skill package.
+A self-produced recording is allowed when the performer or rights holder explicitly attests permission and the source ledger records the creator, permission scope, attestation date, and `redistribution_status: allowed`. This exception applies only to the attested asset; it does not clear third-party people, voices, logos, locations, or music that may appear in it.
+
+For a public reusable repository, include owned, owner-attested, or permission-cleared assets. Link to an already published comparison when the original reference cannot be redistributed. Keep unreviewed user-supplied assets outside the skill package.
 
 This file is an operational safety boundary, not legal advice. Verify applicable rights, provider terms, biometric rules, and platform disclosure requirements before commercial publication.
