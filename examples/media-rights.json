@@ -1,5 +1,10 @@
 {
   "reviewed_at": "2026-08-15",
+  "owner_attestation": {
+    "attested_at": "2026-08-15",
+    "attested_by": "repository owner / @ZhenZhu200",
+    "statement": "The human performer in the side-by-side comparison is the repository owner and permits public redistribution of the repository-hosted MP4 and derived GIF."
+  },
   "media": [
     {
       "path": "examples/media/dayul-motion-output.mp4",
@@ -18,12 +23,69 @@
       "subject": "Da-Yul course with timed voice coaching",
       "rights_status": "owner-provided-product-recording",
       "redistribution_status": "allowed"
+    },
+    {
+      "path": "examples/media/dayul-lunge-warmup.mp4",
+      "subject": "Da-Yul generated lunge warm-up output",
+      "rights_status": "owner-provided-generated-output",
+      "redistribution_status": "allowed"
+    },
+    {
+      "path": "examples/media/dayul-vs-human-side-by-side.mp4",
+      "subject": "Da-Yul output beside a human motion reference performed by the repository owner",
+      "creator": "repository owner / @ZhenZhu200",
+      "source_url": "https://x.com/ZhenZhu200/status/2087578938252087616",
+      "permission_scope": "public repository display and redistribution",
+      "rights_status": "owner-attested-self-recording-and-generated-output",
+      "redistribution_status": "allowed",
+      "attested_at": "2026-08-15"
+    },
+    {
+      "path": "examples/images/dayul-vs-human-side-by-side.gif",
+      "subject": "README preview derived from the owner-authorized side-by-side comparison",
+      "creator": "repository owner / @ZhenZhu200",
+      "source_url": "https://x.com/ZhenZhu200/status/2087578938252087616",
+      "permission_scope": "public repository display and redistribution",
+      "rights_status": "derived-from-owner-attested-comparison",
+      "redistribution_status": "allowed",
+      "attested_at": "2026-08-15"
     }
   ],
-  "excluded": [
+  "asset_groups": [
     {
-      "subject": "Human reference motion clip used in the first experiment",
-      "reason": "Original post URL and redistribution permission were not preserved; link to the published X comparison instead of copying the source file."
+      "paths": [
+        "examples/images/dayul-character-turnaround.jpg",
+        "examples/images/dayul-character-tpose.jpg",
+        "examples/images/dayul-character-head-views.jpg",
+        "examples/images/dayul-character-outfit.jpg"
+      ],
+      "subject": "Da-Yul Character Bible illustrations",
+      "rights_status": "owner-provided-generated-character-assets",
+      "redistribution_status": "allowed"
+    },
+    {
+      "paths": [
+        "examples/images/dayul-kling-face-binding.jpg",
+        "examples/images/dayul-action-library.png",
+        "examples/images/dayul-course-timeline.png",
+        "examples/images/dayul-app-runtime.png",
+        "examples/images/dayul-voice-system.png",
+        "examples/images/dayul-voice-timeline.png"
+      ],
+      "subject": "Da-Yul workflow and product documentation images",
+      "rights_status": "owner-provided-product-documentation",
+      "redistribution_status": "allowed"
+    },
+    {
+      "paths": [
+        "examples/images/dayul-motion-output.png",
+        "examples/images/dayul-lunge-warmup.png",
+        "examples/images/dayul-course-orchestration.png",
+        "examples/images/dayul-timed-voice-coaching.png"
+      ],
+      "subject": "README preview frames derived from allowed repository media",
+      "rights_status": "derived-from-allowed-media",
+      "redistribution_status": "allowed"
     }
   ]
 }
